@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Broken Page</title>
+</head>
+<body>
+  <header>
+    <h1>News</h1>
+    <nav aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+  </header> <!-- BUG: nav never closed -->
+  <main>  <!-- role is redundant on <main> -->
+    <article>
+      <h2>Launch</h2>
+      <p>We shipped <strong>v2.0</strong></p> <!-- BUG: mis-nested -->
+      <img src="chart.png" alt="Image of Chart"> <!-- BUG: missing alt -->
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+</body> <!-- BUG: footer not closed -->
+</html>

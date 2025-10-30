@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>CSS Box Demo</title>
+<style>
+  :root { --brand:#6c5ce7; }
+  body { font: 16px/1.5 system-ui, sans-serif; margin: 0; padding: 2rem; background:#f7f7fb; }
+
+  .card {
+    width: 320px;               /* content width (for content-box) */
+    margin: 40px auto;          /* outer space */
+    padding: 20px;              /* inner space */
+    border: 8px solid #b2bec3;  /* visible ring */
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  }
+  .title { margin: 0 0 12px; font-weight: 700; color: var(--brand); }
+  .cta { display:inline-block; padding:.5rem 1rem; border-radius:.5rem; background:var(--brand); color:#fff; }
+</style>
+
+<article class="card">
+  <h2 class="title">Box Model</h2>
+  <p>Content sits here. Padding pushes the border away from text. Margin pushes other elements away from the box.</p>
+  <a class="cta" href="#">Action</a>
+</article>

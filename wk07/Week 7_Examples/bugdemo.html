@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Demo</title>
+</head>
+<style>
+  .btn { background: #0a66c2; color: white; padding: .6rem 1rem; border-radius: .5rem }
+  .card { border: 1px solid #ddd; padding: 1rem; max-width: 26rem; }
+  /* BUG: selector typo, should be .price not .prize */
+  .prize { font-weight: 700; color: #0a66c2; }
+</style>
+
+<body>
+    <div class="card">
+        <h2>Pro Plan</h2>
+        <p class="price">$19 / mo</p>
+        <button class="btn" id="buy">Buy</button>
+    </div>
+
+</body>
+<script>
+    // BUG 1: logic error — wrong id
+    const button = document.getElementById('buyy'); // should be 'buy'
+    // BUG 2: runtime error if button is null; guard or fix the id
+    button?.addEventListener('click', () => alert('Purchased!'));
+    console.log('Loaded page');
+</script>
+
+</html>

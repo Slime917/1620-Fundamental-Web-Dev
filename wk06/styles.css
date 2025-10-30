@@ -1,0 +1,28 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    border-bottom: 1px solid black;
+}
+
+h1, h2 {
+    color: grey;
+}
+
+p{
+    color: maroon;
+}
+
+p.greenTea{
+    color: green;
+}
+p.raspberry{
+    color: lightblue;
+}
+p.blueberry{
+    color: blue;
+}
+p.cranberry{
+    color: red;
+}

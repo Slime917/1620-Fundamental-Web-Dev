@@ -1,0 +1,4 @@
+/* > than on does the direct child of div and not the nested child */
+div > p{
+    color: purple;
+}

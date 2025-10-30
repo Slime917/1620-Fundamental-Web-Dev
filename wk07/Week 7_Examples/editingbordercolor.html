@@ -1,0 +1,30 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Editing Border Color</title>
+<style>
+  :root { --brand:#6c5ce7; --muted:#c7c7d1; }
+  body { font:16px/1.55 system-ui, sans-serif; background:#f7f8fb; margin:0; padding:2rem; }
+  .grid { display:grid; gap:1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    background:#fff;
+    padding:1rem 1.25rem;
+    border:4px solid var(--muted);      /* we will edit this color */
+    border-radius:14px;
+    box-shadow:0 4px 18px rgba(0,0,0,.06);
+  }
+  .card--brand { border-color: var(--brand); }
+  .title { margin:0 0 .5rem; font-weight:700; color:#333; }
+  .note { margin:.25rem 0 0; color:#666; font-size:.95rem; }
+</style>
+
+<section class="grid">
+  <article class="card" id="one">
+    <h2 class="title">Muted border</h2>
+    <p class="note">We’ll change this using the DevTools color picker.</p>
+  </article>
+
+  <article class="card card--brand" id="two">
+    <h2 class="title">Brand border</h2>
+    <p class="note">This uses <code>border-color: var(--brand)</code>.</p>
+  </article>
+</section>

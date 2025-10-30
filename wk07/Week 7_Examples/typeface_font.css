@@ -1,0 +1,9 @@
+body { font-family: Arial, Helvetica, sans-serif; }
+
+.arial-regular { 
+    font-style: normal; 
+    font-weight: 400; 
+}
+.arial-italic { font-style: italic; font-weight: 400; }
+.arial-bold { font-style: normal; font-weight: 700; }
+.arial-bold-italic { font-style: italic; font-weight: 700; }
