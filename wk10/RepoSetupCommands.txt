@@ -53,3 +53,7 @@ git branch (shows branch and stars current working branch)
 
 get diff ()
 git diff --staged
+
+git restore --staged file_name (unstages)
+commit -a to commit non staged files but hidden
+git status -s (shows branch)
