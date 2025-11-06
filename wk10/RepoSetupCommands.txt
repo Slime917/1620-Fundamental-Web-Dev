@@ -1,0 +1,25 @@
+git config --global user.name "Nathan Siu"
+git config --global user.email "Nathan siu1310257@gmail.com"
+git config --global core.editor "code --wait"
+
+git config --global --get core.editor
+git config --global --get init.defualtBranch main (set default branch to main)
+
+mkdir folder_name
+git init (to initalize repo)
+git branch
+
+git config --gloabl --list
+git config --local --list --show-origin | Select-String -Pattern 'core\.editor|color\.iu'
+git config --system --list
+
+git help -a
+git help tutorital
+git help
+
+Get-childItem -Force (see hiden .git folders in cmd)
+
+echo "# My Notes" (contents inside file) > READMW.md (file)
+
+git add . (to add all)
+git add File_name (to add specific file)
