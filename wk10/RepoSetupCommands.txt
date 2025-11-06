@@ -19,7 +19,7 @@ git help
 
 Get-childItem -Force (see hiden .git folders in cmd)
 
-echo "# My Notes" (contents inside file) > READMW.md (file)
+echo "# My Notes" (contents inside file) > READMW.md (file) >> to append > to over write
 
 git add . (to add all)
 git add File_name (to add specific file)
@@ -31,3 +31,25 @@ git remote add origin https://github.com/<USERNAME>/<REPO>.git
 git push -u origin main
 
 git clone
+
+git branch Branch_name (to create a new branch)
+git checkout Branch_name (to switch branch)
+git switch -c Branch_name (create and switch to branch)
+
+
+Add-content. gitignore ".log"
+
+untracked
+unmodified
+modified
+staging
+
+git remote -v (check fetch and push origins)
+git push -u origin new_branch_name (for upstream)
+
+git status (show files whether they are in one of the four status)
+
+git branch (shows branch and stars current working branch)
+
+get diff ()
+git diff --staged
