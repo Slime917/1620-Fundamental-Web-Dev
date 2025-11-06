@@ -55,7 +55,7 @@ get diff (shows staged and not staged files and lines)
 git diff --staged
 git diff --name-only (file only)
 git diff --stat (shows files and instructions modified)
-git log --oneline -n 2 (shows online branch)
+git log --oneline -n 2 (shows log and how many lines)
 
 git restore --staged file_name (unstages)
 commit -a to commit non staged or modified files but hidden
