@@ -63,3 +63,14 @@ git status -s (shows branch)
 
 remove-Item file_name (only locally)
 git mv file_name Newfolder_name
+
+git branch --v
+git branch --vv (shows)
+
+git tag -a v1.0 (in diretory you want to tag)
+git tag -a tag_id -m message_
+git push --tags
+git push origin tag_name (you want to push)
+git tag -d tag_name (local delete)
+git push origin :refs/tags/tag_name (remote delete)
+alias.shortcut_ (after commant to use as a sortcut in the future)
